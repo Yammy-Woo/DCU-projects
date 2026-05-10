@@ -1,0 +1,265 @@
+Tommy created a new account
+URI: https://clientapp.com/Tommy/
+Username: Tommy
+Summary: Hello World!
+Welcome, Tom.
+
+Paul created a new account
+URI: https://clientapp.com/Paul/
+Username: Paul
+Summary: null
+Welcome, Paul.
+
+Jimmy created a new account
+URI: https://clientapp.com/Jimmy/
+Username: Jimmy
+Summary: null
+Welcome, Jimmy.
+
+Jimmy adds a FollowActivity to Outbox
+Updated following list:
+1.
+<URI: https://clientapp.com/Tommy/
+Username: Tommy
+Summary: Hello World!>
+
+Drafts in Outbox: 1
+Jimmy Outbox delivery
+Jimmy followed Tom
+Drafts in Outbox: 0
+
+Welcome, Paul.
+You have 0 unread messages.
+
+Paul adds a FollowActivity to Outbox
+Updated following list:
+1.
+<URI: https://clientapp.com/Jimmy/
+Username: Jimmy
+Summary: null>
+
+Drafts in Outbox: 1
+Paul Outbox delivery
+Paul followed Jimmy
+Drafts in Outbox: 0
+
+Welcome, Tom.
+You have 1 unread messages.
+
+Unread message in Inbox: 1
+Message 1 --------------------------------
+Jimmy followed Tom
+Updated follower list:
+1.
+<URI: https://clientapp.com/Jimmy/
+Username: Jimmy
+Summary: null>
+Unread message in Inbox: 0
+
+Tom created a CreateActivity to Outbox
+URI: https://clientapp.com/Tommy/post1/
+Name: First Post
+Content: Hi everyone
+Audience: [Jimmy]
+Publish date: 2023-04-13
+Delete date: null
+Likes: []
+Shares: []
+
+Drafts in Outbox: 1
+Tom Outbox delivery
+URI: https://clientapp.com/Tommy/post1/
+Name: First Post
+Content: Hi everyone
+Audience: [Jimmy]
+Publish date: 2023-04-13
+Delete date: null
+Likes: []
+Shares: []
+Drafts in Outbox: 0
+
+Welcome, Jimmy.
+You have 2 unread messages.
+
+Unread message in Inbox: 2
+Message 1 --------------------------------
+Paul followed Jimmy
+Updated follower list:
+1.
+<URI: https://clientapp.com/Paul/
+Username: Paul
+Summary: null>
+Message 2 --------------------------------
+URI: https://clientapp.com/Tommy/post1/
+Name: First Post
+Content: Hi everyone
+Audience: [Jimmy]
+Publish date: 2023-04-13
+Delete date: null
+Likes: []
+Shares: []
+Unread message in Inbox: 0
+
+Jimmy adds a LikeActivity to Outbox
+Updated liked list:
+1.
+<URI: https://clientapp.com/Tommy/post1/
+Name: First Post
+Content: Hi everyone
+Audience: [Jimmy]
+Publish date: 2023-04-13
+Delete date: null
+Likes: []
+Shares: []>
+
+Jimmy adds a ShareActivity to Outbox
+
+Drafts in Outbox: 2
+Jimmy Outbox delivery
+Jimmy liked the following post:
+URI: https://clientapp.com/Tommy/post1/
+Name: First Post
+Content: Hi everyone
+Audience: [Jimmy]
+Publish date: 2023-04-13
+Delete date: null
+Likes: []
+Shares: []
+Jimmy Outbox delivery
+Jimmy shared a post
+URI: https://clientapp.com/Tommy/post1/
+Post:
+<URI: https://clientapp.com/Tommy/post1/
+Name: First Post
+Content: Hi everyone
+Audience: [Jimmy]
+Publish date: 2023-04-13
+Delete date: null
+Likes: []
+Shares: []>
+Drafts in Outbox: 0
+
+Welcome, Paul.
+You have 1 unread messages.
+
+Unread message in Inbox: 1
+Message 1 --------------------------------
+Jimmy shared a post
+URI: https://clientapp.com/Tommy/post1/
+Post:
+<URI: https://clientapp.com/Tommy/post1/
+Name: First Post
+Content: Hi everyone
+Audience: [Jimmy]
+Publish date: 2023-04-13
+Delete date: null
+Likes: []
+Shares: []>
+Unread message in Inbox: 0
+
+
+Paul created a CreateActivity to Outbox
+URI: https://clientapp.com/Paul/post1/
+Name: Hi Tom
+Content: Are you Tommy?
+Audience: [Tom]
+Publish date: 2023-04-13
+Delete date: null
+Likes: []
+Shares: []
+
+Drafts in Outbox: 1
+Paul Outbox delivery
+URI: https://clientapp.com/Paul/post1/
+Name: Hi Tom
+Content: Are you Tommy?
+Audience: [Tom]
+Publish date: 2023-04-13
+Delete date: null
+Likes: []
+Shares: []
+Drafts in Outbox: 0
+
+Welcome, Tom.
+You have 3 unread messages.
+
+Unread message in Inbox: 3
+Message 1 --------------------------------
+Jimmy liked the following post:
+URI: https://clientapp.com/Tommy/post1/
+Name: First Post
+Content: Hi everyone
+Audience: [Jimmy]
+Publish date: 2023-04-13
+Delete date: null
+Likes: [Jimmy]
+Shares: []
+Updated likes list:
+1.
+<URI: https://clientapp.com/Jimmy/
+Username: Jimmy
+Summary: null>
+Message 2 --------------------------------
+Jimmy shared a post
+URI: https://clientapp.com/Tommy/post1/
+Post:
+<URI: https://clientapp.com/Tommy/post1/
+Name: First Post
+Content: Hi everyone
+Audience: [Jimmy]
+Publish date: 2023-04-13
+Delete date: null
+Likes: [Jimmy]
+Shares: [Jimmy]>
+Updated shares list:
+1.
+<URI: https://clientapp.com/Jimmy/
+Username: Jimmy
+Summary: null>
+Message 3 --------------------------------
+URI: https://clientapp.com/Paul/post1/
+Name: Hi Tom
+Content: Are you Tommy?
+Audience: [Tom]
+Publish date: 2023-04-13
+Delete date: null
+Likes: []
+Shares: []
+Unread message in Inbox: 0
+
+Tom deleted the below stream object:
+URI: https://clientapp.com/Tommy/post1/
+Name: First Post
+Content: Hi everyone
+Audience: [Jimmy]
+Publish date: 2023-04-13
+Delete date: null
+Likes: [Jimmy]
+Shares: [Jimmy]
+The stream object after deletion:
+This stream object is deleted
+URI: https://clientapp.com/Tommy/post1/
+Delete date: 2023-04-13
+
+Welcome, Jimmy.
+You have 0 unread messages.
+
+Jimmy adds a UnfollowActivity to Outbox
+Updated following list:
+None
+
+Drafts in Outbox: 1
+Jimmy Outbox delivery
+Jimmy unfollowed Tom
+Drafts in Outbox: 0
+
+Welcome, Tom.
+You have 1 unread messages.
+
+Unread message in Inbox: 1
+Message 1 --------------------------------
+Jimmy unfollowed Tom
+Updated follower list:
+None
+Unread message in Inbox: 0
+
